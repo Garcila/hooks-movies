@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+
+import Title from './components/Title';
+import CardCollection from './components/CardCollection';
 import './App.css';
+import SearchBar from './components/SearchBar';
+
+const API_KEY = process.env.REACT_APP_MOVIE_DB_API_KEY;
+const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&page=1&include_adult=false&query=`;
 
 function App() {
+  const [movies, setMovies] = useState([]);
+
+  async function getMovies(e, searchTerm, setSearchTerm) {
+    e.preventDefault();
+    const result = await fetch(API_URL + searchTerm);
+    const data = await result.json();
+    setMovies(data.results);
+    setSearchTerm('');
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Title />
+      <SearchBar getMovies={getMovies} />
+      <CardCollection movies={movies} />
     </div>
   );
 }
