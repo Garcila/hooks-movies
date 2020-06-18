@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<body style="background: linear-gradient(to bottom, #0b6879, #10476e);">
 
-## Available Scripts
+<h1 align="center">🎣 hOOk A mOvIE 🎣 </h1> 
+<h3 align="center">React Hooks Practice</h3>
 
-In the project directory, you can run:
+<div align="center">
+  <!-- Made By -->
+  <a href="https://garcila.github.io/">
+    <img src='https://img.shields.io/badge/made%20by-not%20a%20%F0%9F%A4%96-blue.svg'
+      alt="Builder" />
+  </a>
+  <!-- Inspired by -->
+  <a href="https://bootcamp.learn.utoronto.ca/coding/landing-2/?s=Google-Brand&hp=1&&60829831671_kwd-487761142440__296493434781_g_c___dc&pkw=%2Bu%20%2Bof%20%2Bt%20%2Bbootcamp&pcrid=296493434781&pmt=b&utm_source=google&utm_medium=cpc&utm_campaign=%5BS%5D+Brand+-+Exact&utm_term=%2Bu%20%2Bof%20%2Bt%20%2Bbootcamp&utm_content=296493434781&d=google&k=%2Bu%20%2Bof%20%2Bt%20%2Bbootcamp&gclid=Cj0KCQiA-JXiBRCpARIsAGqF8wX4c1lBsQgBO8d4bfNZ6IOnwElwmwOyB3vHS2jd1P_I3POkgVrOZnIaAixzEALw_wcB&gclsrc=aw.ds">
+    <img src="https://img.shields.io/badge/inspired-uot%20bootcamp-brightgreen.svg"
+      alt="University of Toronto Bootcamp" />
+  </a>
+</div>
 
-### `npm start`
+Simple app and mix a bunch of Hooks for the sake of learning
+- 🍼 UseRef
+- 🍶 UseEffect
+- 🥡 UseReducer
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Clone and tinker
 
-### `npm test`
+Get it from Github at [Garcila](https://github.com/Garcila/hooks-movies) and make it yours 📘📙📕📗.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+<p align="center">
+<img src="https://res.cloudinary.com/garcila/image/upload/v1592506922/hook_a_movie/Screen_Shot_2020-06-18_at_2.59.22_PM.png" alt='Just and Image of the site' />
+</p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+* [CSS Grid](https://www.w3.org/TR/css-grid-1/#grid-definition) - CSS Grid
 
-### `npm run eject`
+## Images By
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* **Absurd Design** -  [Absurd Design site](https://garcila.github.io/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* **German Arcila** - *Initial work* - [Filling the Bucket](https://garcila.github.io/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+</body>
