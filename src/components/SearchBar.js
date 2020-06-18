@@ -24,13 +24,20 @@ export default function SearchBar() {
   }
 
   return (
-    <form className='searchBar__form' onSubmit={(e) => getMovies(e)}>
-      <input
-        className='searchBar__form-input'
-        type='text'
-        placeholder='sEArch tErm'
-        ref={searchTermRef}
+    <div className='searchBar'>
+      <img
+        className='searchBar__ligh-faucet'
+        src='https://res.cloudinary.com/garcila/image/upload/e_colorize:0/v1592484458/hook_a_movie/Bulb.png'
+        alt='light-faucet'
       />
-    </form>
+      <form className='searchBar__form' onSubmit={(e) => getMovies(e)}>
+        <input
+          className='searchBar__form-input'
+          type='text'
+          placeholder='sEArch tErm'
+          ref={searchTermRef}
+        />
+      </form>
+    </div>
   );
 }

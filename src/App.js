@@ -8,6 +8,7 @@ import SearchBar from './components/SearchBar';
 import './App.css';
 
 function App() {
+  //TODO: ADD
   return (
     <div className='App'>
       <StoreProvider>

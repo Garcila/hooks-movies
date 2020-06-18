@@ -4,6 +4,5 @@ const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&la
 export async function callMovieDB(searchTerm) {
   const result = await fetch(`${API_URL}${searchTerm}`);
   const dataRaw = await result.json();
-  console.log(dataRaw);
   return dataRaw;
 }

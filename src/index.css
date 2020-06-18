@@ -5,13 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgb(230, 230, 230); */
   padding: 0;
   box-sizing: border-box;
-  background: rgb(241, 241, 241);
-
-  background-image: url('Bulb.png');
-  background-size: cover;
+  background: rgb(15, 15, 15);
 }
 
 code {

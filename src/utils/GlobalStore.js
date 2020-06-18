@@ -5,7 +5,14 @@ const StoreContext = createContext();
 const {Provider} = StoreContext;
 
 const initialState = {
-  starters: ['Amelie', 'Moulin Rouge', 'Run Lola Run', 'Clockwork Orange'],
+  starters: [
+    'planet of the apes',
+    'harry potter',
+    'x man',
+    'Star Wars',
+    'Lord of the rings',
+    'avengers',
+  ],
   movies: [],
 };
 
@@ -16,7 +23,6 @@ const reducer = (state, action) => {
       return {...state, movies};
     case LOADING:
       return;
-    //TODO: do loading
     default:
       break;
   }
