@@ -1,41 +1,29 @@
 import React, {createContext, useReducer, useContext} from 'react';
-import {SEARCH_MOVIES, LOADING, SEARCH_TERM} from './actions';
+import {SEARCH_MOVIES, LOADING} from './actions';
 
 const StoreContext = createContext();
 const {Provider} = StoreContext;
 
+const initialState = {
+  starters: ['Amelie', 'Moulin Rouge', 'Run Lola Run', 'Clockwork Orange'],
+  movies: [],
+};
+
 const reducer = (state, action) => {
   switch (action.type) {
     case SEARCH_MOVIES:
-      return {
-        ...state,
-        currentPost: action.post,
-        loading: false,
-      };
-
+      const movies = action.payload;
+      return {...state, movies};
     case LOADING:
-      return {
-        ...state,
-        loading: true,
-      };
-
-    case SEARCH_TERM:
-      return {
-        ...state,
-        searchTerm: ,
-      };
-
+      return;
+    //TODO: do loading
     default:
-      return state;
+      break;
   }
 };
 
 const StoreProvider = ({value = [], ...props}) => {
-  const [state, dispatch] = useReducer(reducer, {
-    movies: [],
-    loading: false,
-    searchTerm: '',
-  });
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return <Provider value={[state, dispatch]} {...props} />;
 };
